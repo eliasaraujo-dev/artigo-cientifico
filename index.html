@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigo Científico em Desenvolvimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="gh-cnt" class="my-5">
+            <h1>Artigo Científico em Desenvolvimento</h1>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+        </header>
+
+        <main>
+            <section id="introducao" class="my-4">
+                <h2>Introdução</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sint odit enim quisquam optio modi non
+                    sapiente inventore excepturi ducimus, asperiores, autem, provident illo quia nostrum impedit. Sed,
+                    illo aperiam.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ut veritatis, error incidunt dicta
+                    mollitia beatae inventore, magni tempora, accusantium impedit. Tempora quo maxime neque eligendi
+                    fugit nihil molestiae adipisci?</p>
+            </section>
+
+            <section id="desenvolvimento" class="my-4">
+                <h2>Desenvolvimento</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa deserunt laudantium totam. Sunt,
+                    doloremque veniam! Facere nisi molestiae cupiditate fuga eaque quod quasi eius nesciunt corporis.
+                    Omnis repellat nostrum ex.</p>
+
+                <div class="embed-responsive-item" embed-responsive-16by9 my-3>
+                    <iframe src="https://drive.google.com/file/d/1TjBJZ7i6-queomTuoCnXf-0y9Oj1DHK8/preview" width="100%"
+                        height="480" allow="autoplay">
+                    </iframe>
+                    <small class="form-text" text-muted>Vídeo ilustrativo sobre o tema do artigo.</small>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat, aut quidem earum architecto
+                    ipsa quam id quo eos cum molestiae vero tenetur doloribus recusandae minima eum sed doloremque sit.
+                </p>
+
+                <blockquote class="blockquote my-3">
+                    <p class="mb-0">"A ciência avança através de hipóteses ousadas e críticas rigorosas."</p>
+                    <footer class="blockquote-footer">Karl Popper, <cite title="The Logic of Scientific Discovery">A
+                            Lógica da Descoberta Científica</cite></footer>
+                </blockquote>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis libero quas minus ipsum totam
+                    perspiciatis hic recusandae impedit, doloribus cupiditate fugiat nisi commodi tempora est voluptatum
+                    amet ducimus dolorem culpa.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, esse. Numquam quis ab consequatur.
+                    Minus provident odio neque! Ullam mollitia dolore ipsam fugiat expedita possimus quia laborum ex
+                    veritatis. Aut.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, in ad natus dicta ut
+                    corporis laudantium atque magni ducimus veritatis laboriosam rerum, quaerat accusantium
+                    reprehenderit corrupti. Repudiandae cumque voluptates doloremque.</p>
+            </section>
+
+            <section id="agradecimento" class="my-4">
+                <h2>Agradecimentos</h2>
+                <p>Agradeço a todos que contribuíram para o desenvolvimento desta pesquisa. Em especial, gostaria de
+                    mencionar o apoio fundamental de [Nome da Instituição/Pessoa].</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit expedita optio itaque aliquam
+                    distinctio hic. Excepturi distinctio ab maiores autem odit ratione quia enim vel eaque? Earum
+                    facilis corporis iusto.</p>
+            </section>
+        </main>
+
+        <footer class="mt-5">
+            <div class="expandable-footer" onclick="toggleFooter">Autor(a): [Nome do(a) Pesquisador(a)]</div>
+            <div class="expandable-content">
+                <p>Este artigo é um trabalho em progresso e reflete o estado atual da pesquisa.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const toggleFooter = () => document.querySelector('.expandable-footer').classList.toggle('expanded');
+    </script>
+</body>
+
+</html>

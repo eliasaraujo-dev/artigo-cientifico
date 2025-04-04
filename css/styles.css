@@ -1,0 +1,144 @@
+:root {
+    --primary-color: rgb(85, 26, 139);
+    /* Azul Bootstrap */
+    --secondary-color: #6c757d;
+    /*Cinza Bootstrap */
+    --accent-color: #28a745;
+    /* Verde sucesso Bootstrap */
+    --text-color: #343a40;
+    /* Preto Bootstrap */
+    --background-color: #f8f9fa;
+    /* Cinza claro Bootstrap */
+}
+
+/* Estilos base para telas menores (mobile-first) */
+.body {
+    font-family: 'ElsevierSans', Arial, Helvetica, Roboto, Lucida Sans Unicode, Microsoft Sans Serif, Segoe UI Symbol, STIXGeneral, Cambria Math, Arial Unicode MS, sans-serif !important;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    /* Garante que não haja margens padrão indesejadas */
+    padding: 15px;
+    /* Adiciona um espaçamento interno básico */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'ElsevierSans', Arial, Helvetica, Roboto, Lucida Sans Unicode, Microsoft Sans Serif, Segoe UI Symbol, STIXGeneral, Cambria Math, Arial Unicode MS, sans-serif !important;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.container {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    /* Ocupa a largura total em telas menores */
+    box-sizing: border-box;
+    /* Garante que padding e border não aumentem a largura */
+    padding: 15px;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: var(--accent-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    /* Permite que o botão se ajuste ao conteúdo */
+    text-decoration: none;
+    /* Remove sublinhado padrão de links */
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+    border-color: darken(var(--primary-color), 10%);
+}
+
+.expandable-footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.expandable-content {
+    display: none;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.expandable-footer.expanded+.expandable-content {
+    display: block;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        /* Limita a largura em telas maiores */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .body {
+        padding: 20px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+        padding: 30px;
+    }
+
+    .body {
+        padding: 30px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Extra extra large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+
+@media only screen and (max-width: 805px) {
+    #gh-cnt #gh-branding {
+        margin-right: 0 !important;
+    }
+}
