@@ -70,21 +70,13 @@ h6 {
     border-color: darken(var(--primary-color), 10%);
 }
 
-.expandable-footer {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 15px;
-    text-align: center;
-    cursor: pointer;
-}
-
 .expandable-content {
     display: none;
     padding-top: 10px;
     font-style: italic;
 }
 
-.expandable-footer.expanded+.expandable-content {
+.expandable-footer.expanded + .expandable-content {
     display: block;
 }
 
